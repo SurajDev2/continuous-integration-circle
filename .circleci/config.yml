@@ -16,6 +16,12 @@ jobs:
       - run:
           name: build the jekyll site
           command: bundle exec jekyll build
+          
+      - run:
+          name: install dependencies
+          command: |
+            gem update --system
+            gem install bundler
 
       - run:
           name: notify build is finished
