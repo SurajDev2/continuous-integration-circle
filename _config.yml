@@ -7,3 +7,9 @@ color_scheme: dark
 remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-remote-theme
+  
+- run:
+          name: install dependencies
+          command: |
+            gem update --system
+            gem install bundler
